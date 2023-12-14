@@ -1,0 +1,547 @@
+/*
+font-family: 'Acme', sans-serif;
+font-family: 'Allerta Stencil', sans-serif;
+*/
+
+:root {
+    --primary-color: darkblue;
+    --white-color: white;
+    --light-gray-color: #EEEEEE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.is-light{background-color: #f1f5f9; color: #212529;}
+.is-dark{background-color: #212529; color: #f1f5f9;}
+
+img{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+.main-content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.menu {
+    background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--light-gray-color);
+    z-index: 1;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Allerta Stencil', sans-serif;
+    color: var(--primary-color);
+    display: inline-block;
+    transition: .3s;
+}
+.menu ul li a{
+    display: block;
+    padding: 2rem;
+    color: var(--primary-color);
+    position: relative;
+}
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--primary-color);
+    transition: all 300ms ease-in-out;
+}
+.menu ul li a:hover::after{
+    width: 50%;
+    left: 25%;
+}
+.menu ul li a:hover{
+    transform: scale(1.10);
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    padding: 8px;
+    border-radius: 10px;
+    font-family: 'Allerta Stencil', sans-serif;
+
+}
+button:hover{
+    cursor: pointer;
+    background-color: darkgray;
+    color: var(--white-color);
+    transition: all ease-in-out 0.4s;
+}
+
+h1{
+    color: black;
+    font-size: 1.5rem;
+}
+
+.menu-spacing{
+    height: 85px;
+}
+
+.secao1 p{
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.secao1 p{
+    font-size: 40px;
+    align-items: center;
+    position: relative;
+}
+
+.secao1{
+    height: 600px;
+}
+
+#sub-text{
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+
+.intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.intro-text-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.secaosobremim{
+    background-color: #212529;
+    height: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 100%;
+}
+.secaosobremim p {
+    color: white;
+}
+
+.sobre-mim{
+    font-size: 50px;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-align: center;
+}
+
+.subparagrafo {
+    font-size: 20px;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-align: center;
+}
+
+.portfolio {
+    padding: 80px 4%;
+}
+
+.flex {
+    justify-content: space-around;
+    margin-top: 60px;
+    display: flex;
+}
+
+.titulo {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: 8s;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.726);
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Allerta Stencil', sans-serif;
+    color: var(--white-color);
+    text-align: center;
+    display: flex;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.section-color {
+    width: 100%;
+    background-color: black;
+    display: block;
+}
+
+.formacao {
+    font-size: 50px;
+    font-family: 'Allerta Stencil', sans-serif;
+    color: lightgrey;
+    padding: 30px;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.grids-formacao {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.grid-estacio {
+    border: 1px solid lightgray;
+    color: var(--white-color);
+    font-family: 'Allerta Stencil', sans-serif;
+    padding: 20px;
+    width: 400px;
+    height: 100px;
+    display: grid;
+}
+.grid-estacio h3{
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.grid-estacio .parag-1 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.grid-estacio .parag-2 {
+    font-size: 13px;
+    color: lightgray;
+}
+
+.grid-logica {
+    border: 1px solid lightgray;
+    color: var(--white-color);
+    font-family: 'Allerta Stencil', sans-serif;
+    padding: 20px;
+    width: 400px;
+    height: 100px;
+    align-items: center;
+    display: grid;
+}
+
+.grid-logica h3{
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.grid-logica .parag-1 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.grid-logica .parag-2 {
+    font-size: 13px;
+    color: lightgray;
+}
+
+.grid-onebitcode {
+    border: 1px solid lightgray;
+    color: var(--white-color);
+    font-family: 'Allerta Stencil', sans-serif;
+    padding: 20px;
+    width: 400px;
+    height: 100px;
+    display: grid;
+}
+
+.grid-onebitcode h3{
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.grid-onebitcode .parag-1 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.grid-onebitcode .parag-2 {
+    font-size: 13px;
+    color: lightgray;
+}
+
+.grid-Udemy {
+    border: 1px solid lightgray;
+    color: var(--white-color);
+    font-family: 'Allerta Stencil', sans-serif;
+    padding: 20px;
+    width: 400px;
+    height: 100px;
+    display: grid;
+}
+
+.grid-Udemy h3{
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.grid-Udemy .parag-1 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.grid-Udemy .parag-2 {
+    font-size: 13px;
+    color: lightgray;
+}
+
+.box-degrade {
+    width: 100%;
+    padding: 100px 0;
+    background-image: linear-gradient(to left, darkblue, black, darkred);
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+}
+
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+
+    }
+}
+
+.hardskills h3{
+    font-family: 'Allerta Stencil', sans-serif;
+    text-align: center;
+    padding: 25px;
+    color: var(--white-color);
+}
+
+.container-hardskills{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.grid-1, .grid-2 p{
+    font-family: 'Allerta Stencil', sans-serif;
+    color: var(--white-color);
+}
+
+.softskills {
+    align-items: center;
+}
+
+.softskills h3{
+    font-family: 'Allerta Stencil', sans-serif;
+    text-align: center;
+    padding: 25px;
+    color: var(--white-color);
+
+}
+
+.container-softskills{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.grid-soft1, .grid-soft2, .grid-soft3 p{
+    font-family: 'Allerta Stencil', sans-serif;
+    color: var(--white-color);
+
+}
+
+footer p{
+    padding: 20px;
+    text-align: center;
+    font-family: 'Allerta Stencil', sans-serif;
+    letter-spacing: 5px;
+}
+
+.close-menu {
+    display: none;
+}
+
+.contato{
+    padding: 30px;
+    background-color: black;
+}
+
+.contato h3{
+    font-family: 'Allerta Stencil', sans-serif;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.contato p{
+    text-align: center;
+    font-family: 'Allerta Stencil', sans-serif;
+    letter-spacing: 2px;
+    color: var(--white-color);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--light-gray-color);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transform: rotate(-90deg);
+    font-size: 20px;
+    border: 0.2rem solid var(--primary-color);
+    text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+    .sobre-mim{
+        font-size: 30px;
+    }
+    .subparagrafo{
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .menu{
+        bottom: 0;
+        text-align: center;
+    }
+    .menu-content, .menu-content ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content{
+        height: 100vh;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .close-menu{
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+    .close-menu-label::after{
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 20px;
+        right: 30px;
+        background-color: black;
+        color: var(--white-color);
+        font-size: 30px;
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after{
+        content: '×';
+    }
+    .menu-spacing{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .intro-text-content{
+        text-align: center;
+        padding: 10px;
+    }
+    .img-port{
+    width: 160px;
+    height: 260px;
+    background-size: cover;
+    background-position: 100% 0%;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: 8s;
+    position: relative;
+    }
+}
+
+@media (max-width: 456px) {
+    .img-port{
+        width: 100px;
+        height: 130px;
+        background-size: cover;
+        background-position: 100% 0%;
+        cursor: pointer;
+        border-radius: 40px;
+        transition: 8s;
+        position: relative;
+        }
+}

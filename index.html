@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weslley Max</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Allerta+Stencil&display=swap" rel="stylesheet">
+</head>
+<body class="is-light">
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <header class="menu">
+        <aside class="menu-content main-content ">
+        <div class="logo">
+           <a href="#"><img id="inicio" src="img/logo color wm.png" alt="Logo Weslley Max"></a> 
+        </div>
+        
+            <nav>
+                <ul onclick="geteElementById('close-menu').checked = false">
+                    <li><a href="#" id="inicio">Início</a></li>
+                    <li><a href="#sobremim">Sobre Mim</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <a href="https://www.linkedin.com/in/weslley-max-82797b245/" target="_blank"><img id="linkedinpreto" src="img/linkedin preto.png" alt="logo linkedin preto"></a>
+                <a href="https://github.com/weslleymaxx" target="_blank"><img id="githubpreto" src="img/github preto.png" alt="logo github preto"></a>
+                <a href="https://wa.me/5584987379345" target="_blank"><img id="wpppreto" src="img/wpp preto.png" alt="logo wpp preto"></a>
+            </div>
+
+        <div>
+            <button id="lightBtn">Tema Claro</button>
+            <button id="darkBtn">Tema Escuro</button>
+        </div>
+        </aside>  
+    </header>
+    <div class="menu-spacing"></div>
+    
+        <section class="secao1 intro-content">
+            <div class="main-content intro-text-content">
+                <p>Olá, me chamo Weslley Max</p>
+                <p id="sub-text"></p>
+            </div>
+        </section>
+
+    <section class="secaosobremim" id="sobremim">
+        <div class="main-content centralize"> 
+        <p class="sobre-mim">Sobre Mim</p>
+        <p class="subparagrafo">Olá, me chamo Weslley Max, no momento estou cursando Sistemas da Informação pela Faculdade Estácio de Sá e aliado a isto, realizo também um curso FullStack pela plataforma <b>Onebitcode.</b> Tenho uma vivência na área da tecnologia alguns anos e agora estou me desvendando na área de desenvolvimento. Desenvolver projetos com foco nas tecnologias de Front End, realizando estudos diariamente e práticas com Javascript.</p>
+    </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="main-content">
+            <h2 class="titulo">MEU PORTFÓLIO</h2>
+            <div class="flex">
+                <a href="https://landingpageestudo.netlify.app/" target="_blank"><div class="img-port" style="background-image: url(img/Landing\ page.jpg);">
+                    <div class="overlay">Projeto 1 - HTML, CSS, JavaScript</div>
+                </div></a>
+                <a href="https://resplendent-starburst-8e9130.netlify.app" target="_blank"><div class="img-port" style="background-image: url(img/Calculadora.jpg);">
+                    <div class="overlay">Projeto 2 - HTML, CSS, JavaScript</div>
+                </div></a>
+                <div class="img-port" style="background-image: url(img/jogo\ da\ velha.jpg);">
+                    <div class="overlay">Projeto 3 Em manutenção <br> Em breve no Github
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section-color">
+        <div class="main-content">
+            
+            <div class="container">
+
+                <h2 class="formacao" id="formacao">FORMAÇÃO</h2>
+                
+                <div class="grids-formacao">
+                <div class="grid-estacio">
+                    <h3>Graduação</h3>
+                    <p class="parag-1">Sistemas da Informação</p>
+                    <p class="parag-2">Estácio de Sá</p>
+                    <p class="parag-2">2022 - 2026</p>
+                </div>
+
+                <div class="grid-logica">
+                    <h3>Curso</h3>
+                    <p class="parag-1">Algoritmos e Lógica de Programação</p>
+                    <p class="parag-2">Udemy - Ministrado por Nelio Alves</p>
+                    <p class="parag-2">2022</p>
+                </div>
+
+                <div class="grid-onebitcode">
+                    <h3>Curso</h3>
+                    <p class="parag-1">Desenvolvedor FullStack</p>
+                    <p class="parag-2">OneBitCode</p>
+                    <p class="parag-2">2023 - Presente momento</p>
+                </div>
+
+                <div class="grid-Udemy">
+                    <h3>Curso</h3>
+                    <p class="parag-1">React.Js e Next.Js</p>
+                    <p class="parag-2">Udemy - Ministrado por Luiz Otávio Miranda</p>
+                    <p class="parag-2">2023 - Presente momento</p>
+                </div>
+                
+            </div>
+                </div>
+        </div>
+        
+    </section>
+
+    <section>
+            <div class="box-degrade">
+
+            <div class="hardskills main-content">
+            
+            <h3>Hard Skills</h3>
+            <div class="container-hardskills">
+                
+                <div class="grid-1">
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>JavaScript</p>  
+                </div>
+                
+                <div class="grid-2">
+                <p>TypeScript</p>
+                <p>React.js</p>
+                </div>
+                
+            </div>
+        </div>
+        <br>
+
+            <div class="softskills main-content">
+                <h3>Soft Skills</h3>
+                <div class="container-softskills">
+                    
+                    <div class="grid-soft1">
+                        <p>Trabalho em Equipe</p>
+                        <p>Resolução de Problemas</p>
+                        <p>Criatividade</p>
+                        <p>Flexibilidade</p>
+                    </div>
+
+                    <div class="grid-soft2">
+                        <p>Capacidade de Adaptação</p>
+                        <p>Curiosidade</p>
+                        <p>Atenção Para Ouvir</p>
+                        <p>Agilidade de Aprendizado</p>
+                    </div>
+
+                    <div class="grid-soft3">
+                        <p>Trabalho Sob Pressão</p>
+                        <p>Comunicação</p>
+                        <p>Princípios Éticos</p>
+                    </div>
+                
+                </div>
+            </div>
+            </div>
+
+    </section>
+
+    <section id="contato">
+        <div class="contato">
+            <h3>CONTATO</h3>
+            <p>Telefone: (84)98737-9345</p>
+            <p>Email: weslleydevti@gmail.com</p>
+            <a href="https://www.linkedin.com/in/weslley-max-82797b245/" target="_blank"><p>Linkedin: /Weslleymax(em atualização)</p></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>· Feito por Weslley Max ·</p>
+    </footer>
+
+    <a class="back-to-top" href="#">❯❯</a>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
